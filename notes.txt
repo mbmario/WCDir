@@ -1,0 +1,16 @@
+Checklist
+    get exts right
+    deal with identically named files
+11/3
+Created the application, added to git
+
+11/4
+First step: output title of file
+Second step: add it to a dict of {document title, 0}
+Third step: write a fn to return word counts
+Fourth step: Unzipping
+
+11/8
+
+
+
