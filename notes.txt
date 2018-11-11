@@ -10,7 +10,15 @@ Second step: add it to a dict of {document title, 0}
 Third step: write a fn to return word counts
 Fourth step: Unzipping
 
-11/8
-
+Install
+python3
+python-devtools
+pip3
+numpy
+pandas
+scipy
+matplotlib
+collections (installed)
+    Counter
 
 
