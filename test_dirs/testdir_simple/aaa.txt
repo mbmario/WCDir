@@ -1,7 +1,0 @@
-	Seems to be running
-	Installed docker compose too
-	Seems to have run out of room on build?
-	Had to change ./docker-compose.yml to 2.0 at the top
-  asdf
-
-asdf

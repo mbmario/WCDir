@@ -1,3 +1,17 @@
+
+Please write an application that will:
+
+Allow the user to provide a path to a directory
+Find all text files in that directory and its children
+If it encounters a compressed archive, open it and process any text files inside
+Output a histogram of the word counts for the files
+
+You may use any resources (Google, Stack Overflow, etc.), tools and libraries, and write in any language. All we ask is that you design and write the code
+
+Please feel free to ask questions, including about the requirements or for feedback on code.  You should do this as if you were a consultant to Maana, and received this request as a project – show us how you’d go about completing it.
+
+
+
 Checklist
     get exts right
     deal with identically named files
@@ -20,5 +34,41 @@ scipy
 matplotlib
 collections (installed)
     Counter
+
+11/12
+
+Init - from path
+   Path
+   Wc_dict (ignoring full path for now)
+   Zips - list of filepaths that are zipped
+
+UT: test_init: bad directory error
+
+Open_zips()
+   Going thru the path, will unzip zip files and register them
+
+UT: test_open_zips. Copies a multi level directory with zips. Walks the new directory, asserting for several zip files that their old zip is there, the new zips are there with nonempty files, and it is registered. Deletes copied dir
+
+Close_zips()
+   Going thru the path, will delete the directories and un-register them
+
+
+Temporarily read in zip? Explore
+
+UT: test_close_zips(). Given a directory with identical opened and zipped files, and a registry. Assert it deletes the open ones and leaves a shorter registry
+
+Populate_wc_dict()
+   Going thru the files, does read_file to and adds the word counts to the wc_dict
+
+Read_file(file)
+   Given a file, returns how many words
+
+   Twst_read_file. Given a couple files with tricks, asserts correct word counts
+
+Quick_hist()
+   Histogram of word counts
+
+Write_to_sql()
+   Don't actually do this
 
 
