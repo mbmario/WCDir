@@ -72,3 +72,13 @@ Write_to_sql()
    Don't actually do this
 
 
+Errors
+    test_open_zips: failure in open_zips, not opening zips
+
+
+Revision:
+    need to make it hist of word: frequency
+    changing the dict to "counter"
+
+
+
